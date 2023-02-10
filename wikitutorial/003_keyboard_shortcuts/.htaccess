@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase "/003_keyboard_shortcuts/"
+RewriteRule ^/?$ wiki.php [L]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^([A-Z][a-z0-9]*[A-Z][a-zA-Z0-9]*)$ wiki.php?word=$1 [L]
+RewriteCond %{QUERY_STRING} ^edit$
+RewriteRule ^([A-Z][a-z0-9]*[A-Z][a-zA-Z0-9]*)$ wiki.php?word=$1&action=edit [L]

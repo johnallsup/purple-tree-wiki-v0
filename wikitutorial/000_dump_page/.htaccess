@@ -1,0 +1,5 @@
+RewriteEngine On
+# Change RewriteBase depending on where on your server you put the wiki
+RewriteBase "/000_dump_page/"
+RewriteRule ^/?$ wiki.php [L]
+RewriteRule ^([A-Z][a-z0-9]*[A-Z][a-zA-Z0-9]*)$ wiki.php?word=$1 [L]

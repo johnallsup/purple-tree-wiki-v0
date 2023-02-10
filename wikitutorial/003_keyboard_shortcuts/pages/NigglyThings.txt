@@ -1,0 +1,6 @@
+What happens if you put WIKI_WORD into the source? 
+WikiWords in this instance do not include underscores, 
+though it is a simple exercise to change the pattern that matches WikiWord's.
+Another thing is that I should probably have the Css set to pre-wrap.
+The intent for later versions is to use MarkDown as the source language.
+I've got things sketched out, but need to get around to recording the videos.TesT
